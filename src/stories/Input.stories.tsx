@@ -1,6 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import React, { useState } from 'react'
 
+import "./Input.stories.css"
+
 import Input from "../components/Input/Input"
 
 export default {
@@ -11,7 +13,11 @@ export default {
 export const Card: ComponentStory<typeof Input> = () => {
   const [value, setValue] = useState<string>();
   console.log(value);
-  return <Input type="card" value={value} onChange={(e) => setValue(e.currentTarget.value)}/> 
+  return <Input 
+  type="card" 
+  value={value} 
+  onChange={(e) => setValue(e.currentTarget.value)}
+  extraClassName="my-input"/> 
 }
 
 export const CVC: ComponentStory<typeof Input> = () => {

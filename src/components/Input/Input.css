@@ -1,0 +1,26 @@
+.compatibleui-input {
+  width: 100%;
+  padding: .3rem;
+  min-width: 0px;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-size: 1rem;
+  border-radius: .3em;
+  vertical-align: top;
+  border-width: .15em;
+  border-style: solid;
+  border-image: initial;
+  border-color: #bfbfbf;
+  background: #fff;
+  transition: border-color .1s ease;
+}
+
+.compatibleui-input:hover {
+  border-color: #818181;
+}
+
+.compatibleui-input:focus{
+  border-color: #000000;
+}

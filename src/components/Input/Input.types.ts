@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from "react"
+import { HTMLAttributes, InputHTMLAttributes } from "react"
 
 export type InputType = 
 "text" | 
@@ -7,8 +7,10 @@ export type InputType =
 "card/date" |
 "card/cvc"
 
-export interface IInputBaseProps {
+export interface IInputBaseProps extends HTMLAttributes<HTMLInputElement> {
   type: InputType,
   onChange?: (event: React.FormEvent<HTMLInputElement>) => void,
-  value: string | number | undefined
+  value: string | number | undefined,
+  customClassName?: string
+  extraClassName?: string
 }

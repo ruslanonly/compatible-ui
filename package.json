@@ -1,10 +1,10 @@
 {
   "name": "compatible-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "No style, clean and adaptive React UI Library",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "webpack && npm version patch && npm publish",
+    "pub": "webpack && npm --no-git-tag-version version patch && npm publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -36,8 +36,13 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.26",
     "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
