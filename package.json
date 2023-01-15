@@ -1,6 +1,6 @@
 {
   "name": "compatible-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "No style, clean and adaptive React UI Library",
   "main": "./dist/index.js",
   "scripts": {
