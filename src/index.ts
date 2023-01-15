@@ -1,5 +1,7 @@
-import Button from "./components/Button/Button";
-
+import Input from "./components/Input/Input"
+import { formatCardDateNumber, formatCardNumber } from "./components/utils"
 export {
-  Button
+  Input,
+  formatCardDateNumber,
+  formatCardNumber
 }

@@ -4,7 +4,9 @@
   "description": "No style, clean and adaptive React UI Library",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "webpack && npm version patch && npm publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,17 @@
   },
   "homepage": "https://github.com/ruslanonly/compatible-ui#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.26",
+    "babel-loader": "^8.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-loader": "^9.4.2",
